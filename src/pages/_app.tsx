@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useState } from "react";
 import {
-  Hydrate,
+  HydrationBoundary,
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
@@ -18,20 +18,17 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Home</title>
         <meta name="Home" content="Home" />
-        <link
-          rel="icon"
-          type="text/html"
-        />
+        <link rel="icon" type="text/html" />
       </Head>
       <QueryClientProvider client={queryClient}>
-        <Hydrate state={pageProps.dehydratedState}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <HydrationBoundary state={pageProps.dehydratedState}>
+          <ThemeProvider attribute="class" defaultTheme="light">
             <Layout>
               <Component {...pageProps} />
             </Layout>
           </ThemeProvider>
           <ReactQueryDevtools initialIsOpen={false} />
-        </Hydrate>
+        </HydrationBoundary>
       </QueryClientProvider>
     </>
   );
