@@ -8,8 +8,6 @@ export default function Home() {
                              <MenuToggle />
       </div>
 
-
-
       
                 <h1 className="p-2 text-4xl font-bold  min-h-max h-[600px] flex justify-center items-center">
                   Hello
