@@ -1,7 +1,5 @@
 ## Getting Started
 
-
-
 ```bash
 npx create-next-app --example https://github.com/hellboy41785/nextjstype_temp test-template
 

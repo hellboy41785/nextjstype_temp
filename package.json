@@ -43,7 +43,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "tailwind-scrollbar": "^3.0.5",
