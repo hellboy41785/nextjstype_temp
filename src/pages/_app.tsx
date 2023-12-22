@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useState } from "react";
+import React from "react";
 import {
   HydrationBoundary,
   QueryClient,

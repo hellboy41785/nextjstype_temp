@@ -4,3 +4,5 @@ node_modules
 yarn.lock
 package-lock.json
 public
+src/pages/_document.tsx
+
