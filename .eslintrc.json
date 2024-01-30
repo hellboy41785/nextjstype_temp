@@ -27,7 +27,8 @@
           "FunctionExpression": false
         }
       }
-    ]
+    ],
+    "no-console": ["error", { "allow": ["warn", "error"] }]
   },
   "settings": {
     "react": {
