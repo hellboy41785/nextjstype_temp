@@ -22,6 +22,7 @@ module.exports = {
         "security",
         "style",
         "test",
+        "refactor",
       ],
     ],
   },
